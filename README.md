@@ -46,6 +46,7 @@ curl -XPOST http://localhost:8000/gpx/summary -d @foo.gpx \
 ```
 
 Example response:
+
 ```
 {
   "total_distance": 14113.27,
@@ -67,10 +68,12 @@ Example response:
 `/gpx/plot`
 
 Plot GPX tracks as a static image, returning a PNG file.
+
 ```
 curl -s -XPOST http://localhost:8000/gpx/plot -d @foo.gpx \
   -H "Content-Type: application/xml" --output foo.png
 ```
 
 Example response:
+
 ![Example GPX Plot](example-plot.png)
